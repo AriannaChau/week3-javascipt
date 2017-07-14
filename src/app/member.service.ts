@@ -25,8 +25,8 @@ export class MemberService {
 
   updateMember(localUpdatedMember){
   var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
-  memberEntryInFirebase.update({title: localUpdatedMember.name,
-                              artist: localUpdatedMember.age,
-                              description: localUpdatedMember.faveLocation});
+  memberEntryInFirebase.update({name: localUpdatedMember.name,
+                              age: localUpdatedMember.age,
+                              faveLocation: localUpdatedMember.faveLocation});
 }
 }
