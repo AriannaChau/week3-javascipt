@@ -1,18 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Album } from '../album.model';
+import { Member } from '../member.model';
+import { MemberService } from '../member.service';
 
 @Component({
   selector: 'app-member-detail',
   templateUrl: './member-detail.component.html',
-  styleUrls: ['./member-detail.component.scss']
+  styleUrls: ['./member-detail.component.scss'],
+  providers: [MemberService]
 })
 export class MemberDetailComponent implements OnInit {
+  memberId: number;
+  memberToDisplay: Member;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private memberService: MemberService) {}
 
   ngOnInit() {
-  }
-
+    this.route.params.forEach((urlParameters) => {
+      this.memberId = parseInt(urlParameters['id']);
+  });
+}
 }
