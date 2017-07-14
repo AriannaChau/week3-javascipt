@@ -5,8 +5,22 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about.component.html',
   // styleUrls: ['./about.component.scss'],
   styles: [`
-    .body {
-      background-color: blue;
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+    body {
+      height: 100vh;
+      background-color: #4b5247;
+    }
+
+    .about {
+      margin: 0 auto;
+      font-size: 18px;
+      width: 55%;
+
+    }
+    span {
+      font-size: 21px;
+      font-family: Playfair Display;
     }
   `],
 })

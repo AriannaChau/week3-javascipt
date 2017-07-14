@@ -1,28 +1,121 @@
-# Week3
+# Club Tracker
+### Arianna Chau, July 14th, 2017
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg?style=plastic)](https://github.com/ariannachau/week3)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+This web app was made primarily with Angular 4 and the Angular CLI, Typescript, and the Firebase Database. It's purpose is to show off my week 3 knowledge from Epicodus and my efficiency with the above. This club tracker is a simple app designed to give the user the ability to see a list of club members as well as view their specific details on a dynamic page. There is also an admin side that allows the admins to create, update, and delete members.
 
-## Development server
+## Landing Page:
+![](./src/assets/images/welcome.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## About Page:
+![](./src/assets/images/about.png)
 
-## Code scaffolding
+## Members Page:
+![](./src/assets/images/members.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Planning
 
-## Build
+### 1. Configuration/dependencies
+  The app will primarily use Angular 4, the AngularCLI, Firebase database, and Typescript. It was made with what I learned from week 3 in the JavaScript track at Epicodus. Stretch goals include:
+    * Host the site live
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### 2. User Stories
+  * As a user, I'd like to visit a page to see a list of all team or club members.
+  * As a user, I'd like to click a team or club member's entry in the list to visit their profile page, which should include more details about them.
+  * As a user, I'd like the option to visit an "About" page that explains what the club is, and what they do.
+  * As a user, I'd like all data persisted in a database, so it's always there when I need it.
+  * As a user, I'd like to filter the list of users by their particular role in the group, or some other information/category. (For instance, a club may have a treasurer, president, and/or secretary. A sports team may have a goalie, forward, or striker, a book club may have founders and attendees. You're also welcome to filter by something other than role, if it's more relevant to your project.)
+  * As an administrator, I want to add new users to the club. (User authentication is not required).
+  * As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.
+  * As an administrator, need the option to delete a user, in case they leave the club or team.
 
-## Running unit tests
+### 3. Integration
+  * Root component/Index page.
+  * Contact page
+  * About page
+  * List members page.
+  * Dynamic members pages.
+  * Admin page with CRUD functionality for members
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 4. UX/UI
+  * Sass
 
-## Running end-to-end tests
+### 5. Polish
+  * Refactor code.
+  * Delete unused code.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+## Prerequisites
 
-## Further help
+You will need the following things properly installed on your computer.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Typescript](https://www.typescriptlang.org/)
+* [Angular 4](https://angularjs.org/)
+
+## Installation
+
+As of writing this README, these instructions work on MacOS.
+
+* Run `$ git clone <this-repository-url>`
+* Then `$ cd club-tracker`
+* Once in the club-tracker folder, run `$ npm install`, `$bower init`(just press enter through the prompts), `$ bower install bootstrap --save`, and `$ bower install`
+* You will need to remake the api-keys.ts file. Login to firebase and create your own project here https://firebase.google.com/
+  * Once logged in, click on 'Go To Console'.
+  * Then click 'Add project', give it a name, and select your region.
+  * Next, click 'Add Firebase to your web app'.
+  * Grab this block of code:
+```
+var config = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    projectId: "xxxx",
+    storageBucket: "",
+    messagingSenderId: "xxxx"
+  };
+```
+  * Create an `api-keys.ts` file inside the app directory and copy the block of code into it.
+  * Replace `var config` with `export var masterFirebaseConfig`
+  * To finish setting firebase up, go to firebase and and go into the database tab.
+    * Click on the button made of three dots.
+    * Select the Import JSON option.
+    * Select browse, navigate to the project folder, and open the `sample-member.json` file.
+    * Select Import and your database should be complete!
+
+## Running / Development
+
+Now that everything you need should be installed and setup, we can run it with angular.
+
+* Run `$ ng serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+
+## Built With
+
+* Angular4
+* AngularCLI
+* Firebase
+* Typescript
+* HTML
+* CSS/SASS
+* ES6
+* Node
+
+## Authors
+
+Arianna Chau
+
+## License
+
+MIT License
+
+Copyright (c) Arianna Chau, 2017
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.

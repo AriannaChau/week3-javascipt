@@ -22,7 +22,7 @@ import { Component, OnInit } from '@angular/core';
       align-items: center;
       font-size: 45px;
       color: white;
-      text-shadow: 2px 2px 2px black;
+      text-shadow: 3px 4px 4px black;
     }
   `],
 })
