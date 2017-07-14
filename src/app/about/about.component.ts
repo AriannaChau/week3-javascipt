@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styles: [`
     @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
+    h1 {
+      margin-left: 20px;
+    }
+
     body {
       height: 100vh;
       background-color: #4b5247;

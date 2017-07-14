@@ -1,5 +1,10 @@
-<div>
-  <h3>{{(memberToDisplay | async)?.name}}</h3>
-  <h4>{{(memberToDisplay | async)?.age}}</h4>
-  <h4>{{(memberToDisplay | async)?.faveLocation}}</h4>
-</div>
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="detail">
+      <h2>{{(memberToDisplay | async)?.name}}</h2>
+      <h4>Age: {{(memberToDisplay | async)?.age}}</h4>
+      <h4>Favorite Location: {{(memberToDisplay | async)?.faveLocation}}</h4>
+    </div>
+  </body>
+</html>

@@ -10,6 +10,10 @@ import { FirebaseListObservable } from 'angularfire2/database';
   // styleUrls: ['./members.component.scss'],
   providers: [MemberService],
   styles: [`
+    h1 {
+      margin-left: 20px;
+    }
+    
     body {
       height: 100vh;
       background-color: #4b5247;

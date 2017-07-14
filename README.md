@@ -34,7 +34,6 @@ This web app was made primarily with Angular 4 and the Angular CLI, Typescript, 
   * Contact page
   * About page
   * List members page.
-  * Dynamic members pages.
   * Admin page with CRUD functionality for members
 
 ### 4. UX/UI
@@ -58,8 +57,8 @@ You will need the following things properly installed on your computer.
 As of writing this README, these instructions work on MacOS.
 
 * Run `$ git clone <this-repository-url>`
-* Then `$ cd club-tracker`
-* Once in the club-tracker folder, run `$ npm install`, `$bower init`(just press enter through the prompts), `$ bower install bootstrap --save`, and `$ bower install`
+* Then `$ cd week3`
+* Once in the week3 folder, run `$ npm install`
 * You will need to remake the api-keys.ts file. Login to firebase and create your own project here https://firebase.google.com/
   * Once logged in, click on 'Go To Console'.
   * Then click 'Add project', give it a name, and select your region.
