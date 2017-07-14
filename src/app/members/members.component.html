@@ -1,5 +1,11 @@
 <h2>Members</h2>
 
-<div class="members" *ngFor="let member of members | async" (click)="goToDetailPage(member)">
-    <h2>{{member.name}}</h2>
+<div class="members" *ngFor="let member of members | async">
+    <h2 (click)="goToDetailPage(member)">{{member.name}}</h2>
+    <div *ngIf="currentRoute === '/admin'">
+      {{member.age}}
+      {{member.location}}
+      <hr>
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
 </div>
