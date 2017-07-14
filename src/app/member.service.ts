@@ -29,4 +29,9 @@ export class MemberService {
                               age: localUpdatedMember.age,
                               faveLocation: localUpdatedMember.faveLocation});
 }
+
+deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }
