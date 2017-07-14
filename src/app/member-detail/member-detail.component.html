@@ -1,5 +1,5 @@
 <div>
-  <h3>{{memberToDisplay.name}}</h3>
-  <h4>{{memberToDisplay.age}}</h4>
-  <h4>{{memberToDisplay.faveLocation}}</h4>
+  <h3>{{(memberToDisplay | async)?.name}}</h3>
+  <h4>{{(memberToDisplay | async)?.age}}</h4>
+  <h4>{{(memberToDisplay | async)?.faveLocation}}</h4>
 </div>

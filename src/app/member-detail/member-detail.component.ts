@@ -11,8 +11,8 @@ import { MemberService } from '../member.service';
   providers: [MemberService]
 })
 export class MemberDetailComponent implements OnInit {
-  memberId: number;
-  memberToDisplay: Member;
+  memberId: string;
+  memberToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,8 +21,8 @@ export class MemberDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.memberId = parseInt(urlParameters['id']);
+      this.memberId = urlParameters['id'];
   });
-  this.memberToDisplay = this.memberService.getMemberById(this.memberId);
-}
+    this.memberToDisplay = this.memberService.getMemberById(this.memberId);
+  }
 }

@@ -1,3 +1,21 @@
-<p>
-  admin works!
-</p>
+<h3>Add a New Member</h3>
+<div>
+  <div>
+    <label>Member Name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Age:</label>
+    <br>
+    <input #newAge>
+  </div>
+
+  <div>
+    <label>Members Favorite Location:</label>
+    <br>
+    <textarea #newLocation></textarea>
+  </div>
+  <button (click)="submitForm(newName.value, newAge.value, newLocation.value); newName.value=''; newAge.value=''; newLocation.value=''">Add Member</button>
+</div>
