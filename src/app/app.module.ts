@@ -6,6 +6,12 @@ import { AppComponent } from './app.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { routing } from './app.routing';
+import { AboutComponent } from './about/about.component';
+import { MembersComponent } from './members/members.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 
 export const firebaseConfig = {
@@ -17,12 +23,17 @@ export const firebaseConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WelcomeComponent,
+    AboutComponent,
+    MembersComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
