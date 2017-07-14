@@ -1,7 +1,5 @@
 <h2>Members</h2>
 
-<div class="members" *ngFor="let member of members">
-    <h3>{{member.name}}</h3>
-    <h4>Age:</h4> {{member.age}}
-    <h4>Favorite place to be:</h4> {{member.faveLocation}}
+<div class="members" *ngFor="let member of members" (click)="goToDetailPage(member)">
+    <h2>{{member.name}}</h2>
 </div>

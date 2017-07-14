@@ -11,6 +11,7 @@ import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { MembersComponent } from './members/members.component';
 import { AdminComponent } from './admin/admin.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 
 
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     AboutComponent,
     MembersComponent,
-    AdminComponent
+    AdminComponent,
+    MemberDetailComponent
   ],
   imports: [
     BrowserModule,
