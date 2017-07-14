@@ -1,0 +1,32 @@
+{ "members": [{
+    "name": "Arianna Chau",
+    "age": "22",
+    "faveLocation": "Trillium Lake",
+    "id": "1"
+    }, {
+    "name": "Carrie Lewis",
+    "age": "46",
+    "faveLocation": "Little ZigZag Falls",
+    "id": "2"
+    }, {
+    "name": "Steven Galvin",
+    "age": "23",
+    "faveLocation": "Mirror Lake",
+    "id": "3"
+    }, {
+    "name": "Taylor Almond",
+    "age": "22",
+    "faveLocation": "Mystic Falls",
+    "id": "4"
+    }, {
+    "name": "McKenzie Engelgau",
+    "age": "22",
+    "faveLocation": "Angels Rest",
+    "id": "5"
+    }, {
+    "name": "Nate Cheney",
+    "age": "30",
+    "faveLocation": "Triple Falls",
+    "id": "6"
+    }]
+}
